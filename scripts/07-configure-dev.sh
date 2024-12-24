@@ -11,7 +11,11 @@ poetry self add keyrings.google-artifactregistry-auth
 curl https://pyenv.run | bash
 
 # install dependencies for building python versions
-sudo apt install -y libffi-dev libsqlite3-dev
+# https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+sudo apt install build-essential libssl-dev zlib1g-dev \
+  libbz2-dev libreadline-dev libsqlite3-dev curl \
+  libncursesw5-dev xz-utils tk-dev libxml2-dev \
+  libxmlsec1-dev libffi-dev liblzma-dev
 
 # install docker
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
