@@ -121,3 +121,7 @@ alias ps="procs"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+export PATH=/home/locutor/.local/bin:$PATH
+
+[[ -e "/home/locutor/.local/lib/oracle-cli/lib/python3.10/site-packages/oci_cli/bin/oci_autocomplete.sh" ]] && source "/home/locutor/.local/lib/oracle-cli/lib/python3.10/site-packages/oci_cli/bin/oci_autocomplete.sh"
