@@ -18,3 +18,6 @@ sudo apt install pgadmin4
 
 # Install dbeaver
 sudo snap install dbeaver-ce
+
+# Install java
+sudo apt install default-jdk
